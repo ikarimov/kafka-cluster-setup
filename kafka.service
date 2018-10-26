@@ -1,0 +1,17 @@
+[Unit]
+Description=Apache Kafka - high-available, distributed message broker
+Documentation=http://kafka.apache.org/documentation.html
+Requires=zookeeper.service network.target remote-fs.target
+After=zookeeper.service network.target remote-fs.target
+
+[Service]
+Type=simple
+#User=kafka
+ExecStart=/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+ExecStop=/opt/kafka/bin/kafka-server-stop.sh
+Restart=on-failure
+SyslogIdentifier=kafka
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
