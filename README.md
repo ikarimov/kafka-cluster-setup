@@ -1,4 +1,4 @@
-#Kafka Cluster Setup
+# Kafka Cluster Setup
 =================================================================================
 ```
 NAME
@@ -30,7 +30,7 @@ DESCRIPTION
 sudo ./kafka_setup.sh -v 1.1.0
 ```
 
-###For help
+### For help
 ------------
 ```
 ./kafka_setup.sh -h 
