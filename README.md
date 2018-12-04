@@ -1,4 +1,4 @@
-# Kafka Cluster Setup
+# Kafka Cluster Setup Script
 =================================================================================
 
 A script to install, configure Kafka and it's dependencies (such as zookeeper) on Ubuntu. The script is very useful to automate your Kafka cluster setup, it supports a single-node (good for developers) as well as multi-node clusters.
